@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="logo-mark.png" />
 <link rel="stylesheet" href="styles.css" />
 
 <script type="application/ld+json">
@@ -36,11 +37,11 @@
 
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="index.html" aria-label="Wellness NPs home"><span class="seal">WN</span><span><span class="brand-name">Wellness NPs</span><span class="brand-sub">Concierge Medicine</span></span></a>
+    <a class="brand" href="index.html" aria-label="Wellness NPs home"><img class="brand-logo-mark" src="logo-mark.png" alt="" /><span><span class="brand-name">Wellness NPs</span><span class="brand-sub">Concierge Medicine</span></span></a>
     <nav class="nav-links" aria-label="Primary">
       <div class="has-sub"><a href="index.html#services" aria-haspopup="true">Services</a>
         <div class="submenu" role="menu">
-          <a href="weight-loss.html">Weight Loss &amp; GLP-1</a>
+          <a href="weight-loss.html">Weight Loss &amp; GLPS</a>
           <a href="peptides.html">Peptide Therapy</a>
           <a href="hormone-replacement.html">Hormone Replacement</a>
           <a href="iv-therapy.html">IV Therapy</a>
@@ -64,11 +65,8 @@
       <p class="lede">Concierge care built for women navigating perimenopause, menopause and hormonal change — longer visits, direct access to your provider, and a plan rooted in your labs and your life.</p>
       <div class="btn-row"><a class="btn" href="#consult">Schedule a consult <span class="arrow">&rarr;</span></a><a class="btn btn--ghost" href="#how">How it works</a></div>
     </div>
-    <div class="hero-figure reveal" aria-hidden="true">
-      <svg class="contour" viewBox="0 0 400 500" preserveAspectRatio="none"><g fill="none" stroke="#FBF6EE" stroke-width="1">
-        <path d="M0 90 C100 60 300 130 400 95"/><path d="M0 150 C120 120 280 190 400 150"/><path d="M0 210 C90 180 320 240 400 208"/>
-        <path d="M0 270 C140 245 260 305 400 268"/><path d="M0 330 C100 305 300 360 400 328"/><path d="M0 400 C130 380 270 440 400 398"/></g></svg>
-      <span class="ph-label">Add provider / patient photo</span>
+    <div class="hero-figure reveal">
+      <img class="ph-img" src="provider.jpg" alt="Aissel Faquir, nurse practitioner specializing in women's health at Wellness NPs" />
     </div>
   </div>
 </section>
@@ -135,13 +133,32 @@
   </div>
 </section>
 
+<section class="section bg-cream2" id="membership">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow center">Membership</span>
+      <h2>Our membership model</h2>
+      <p>One annual fee covers all of the time, access, services and advice our office provides over the course of 12 months.</p>
+    </div>
+    <div class="reveal" style="max-width:840px;margin:clamp(36px,4vw,54px) auto 0;background:var(--white);border:1px solid var(--line);padding:clamp(30px,4vw,54px)">
+      <ul class="checks">
+        <li>Your <strong>initial / annual visit</strong> is scheduled for <strong>2 hours</strong>; follow-up visits are typically 30&ndash;60 minutes in length.</li>
+        <li>Enrolled patients have access to a <strong>HIPAA-compliant phone app</strong> that allows for easy, direct text and phone communication with our office.</li>
+      </ul>
+      <div class="rule" style="margin:30px 0"><span class="node"></span></div>
+      <p style="color:var(--text-soft)">A <strong>$250 enrollment deposit</strong> is due at the time of your scheduled appointment. This fee is applied toward your Annual Fee and is refundable unless cancellation occurs with less than 48 hours' notice.</p>
+      <div class="btn-row mt-3"><a class="btn btn--gold" href="https://wellnessnps.janeapp.com/locations/the-wellness-nps/book" target="_blank" rel="noopener">Enroll &amp; book <span class="arrow">&rarr;</span></a></div>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="sec-head center reveal"><span class="eyebrow center">Questions</span><h2>Concierge care FAQ</h2></div>
     <div class="faq reveal">
       <details><summary>What is concierge medicine?</summary><div class="ans">A membership-based model offering longer, unrushed visits, the same provider each time, and direct access between appointments — care designed around you.</div></details>
       <details><summary>Do you only see women?</summary><div class="ans">Women's health is our specialty, with deep focus on perimenopause and menopause. We also care for men seeking hormone and wellness support.</div></details>
-      <details><summary>How does membership work?</summary><div class="ans">We'll review membership options, what's included and pricing during your consultation, so you can choose what fits your needs.</div></details>
+      <details><summary>How does membership work?</summary><div class="ans">One annual fee covers your visits, services and direct access for 12 months. A $250 enrollment deposit is collected at your first appointment and applied toward your annual fee (refundable unless you cancel with less than 48 hours' notice).</div></details>
       <details><summary>Are visits in person or virtual?</summary><div class="ans">Both. Many visits can be virtual, with in-person options available. We'll confirm what's appropriate and which states we're licensed to treat in.</div></details>
     </div>
   </div>
@@ -153,8 +170,8 @@
     <h2 class="mt-1">Schedule your women's health consult</h2>
     <p class="measure">The care you've been looking for starts with a conversation that isn't rushed.</p>
     <div class="btn-row">
-      <a class="btn btn--onDark" href="[ADD BOOKING LINK]">Book online <span class="arrow">&rarr;</span></a>
-      <a class="btn btn--ghost" style="--fg:var(--ivory);--bd:rgba(251,246,238,.4)" href="tel:[ADD PHONE]">Call the practice</a>
+      <a class="btn btn--onDark" href="https://wellnessnps.janeapp.com/locations/the-wellness-nps/book" target="_blank" rel="noopener">Book online <span class="arrow">&rarr;</span></a>
+      <a class="btn btn--ghost" style="--fg:var(--ivory);--bd:rgba(251,246,238,.4)" href="tel:+17864891191">Call the practice</a>
     </div>
   </div></div>
 </section>
@@ -164,14 +181,15 @@
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-about"><a class="brand" href="index.html"><span class="seal">WN</span><span class="brand-name">Wellness NPs</span></a>
-        <p>Concierge functional medicine led by nurse practitioners. Personalized, lab-guided care for hormones, weight, vitality and women's health.</p></div>
-      <div><h5>Services</h5><a href="weight-loss.html">Weight Loss &amp; GLP-1</a><a href="peptides.html">Peptide Therapy</a>
+      <div class="footer-about"><a class="brand" href="index.html" aria-label="Wellness NPs home"><img class="footer-logo" src="logo.png" alt="Wellness NPs" /></a>
+        <p>Concierge functional medicine led by a nurse practitioner. Personalized, lab-guided care for hormones, weight, vitality and women's health.</p></div>
+      <div><h5>Services</h5><a href="weight-loss.html">Weight Loss &amp; GLPS</a><a href="peptides.html">Peptide Therapy</a>
         <a href="hormone-replacement.html">Hormone Replacement</a><a href="iv-therapy.html">IV Therapy</a><a href="concierge-womens-health.html">Women's Health</a></div>
       <div><h5>Practice</h5><a href="index.html#approach">Our approach</a><a href="index.html#concierge">Concierge care</a>
         <a href="index.html#faq">FAQ</a><a href="#consult">Schedule a consult</a></div>
-      <div class="footer-contact"><h5>Contact</h5><p>[ADD STREET ADDRESS]</p><p>[ADD CITY, STATE ZIP]</p>
-        <p><a href="tel:[ADD PHONE]">[ADD PHONE]</a></p><p><a href="mailto:[ADD EMAIL]">[ADD EMAIL]</a></p></div>
+      <div class="footer-contact"><h5>Contact</h5><p>7971 Riviera Blvd #308</p><p>Miramar, FL 33023</p>
+        <p><a href="tel:+17864891191">(786) 489-1191</a></p><p>Mon&ndash;Sat: 10am&ndash;6pm</p>
+        <p>In-person &amp; telehealth</p></div>
     </div>
     <p class="disclaimer">The information on this page is for general educational purposes only and is not a substitute for professional medical advice, diagnosis or treatment. Membership terms, included services and pricing are reviewed individually. Eligibility for any therapy is determined by a licensed provider; results vary and no specific outcome is guaranteed.</p>
     <div class="footer-bottom"><span>&copy; <span id="yr">2026</span> Wellness NPs. All rights reserved.</span><span>Privacy Policy &middot; Terms &middot; Notice of Privacy Practices</span></div>
