@@ -7,7 +7,7 @@
 :root{
   /* palette */
   --cream:#FFF8F0;
-  --cream-2:#F6EADB;
+  --cream-2:#F4EFE6;
   --ivory:#FFFFFF;
   --white:#FFFFFF;
   --espresso:#4B2E2B;
@@ -445,3 +445,19 @@ p{max-width:62ch}
 .provider-photo .ph-img{object-position:50% 12%}
 /* dark sections get a faint warm separation now that surfaces are white */
 .bg-cream2{background:var(--cream-2)}
+
+/* =========================================================
+   Polished placeholders — branded motif panels until real
+   photos are added (hide "add photo" labels, add watermark)
+   ========================================================= */
+.ph-label{display:none}
+.ph{position:relative}
+.ph::after{content:"";position:absolute;inset:0;
+  background:url("logo-mark.png") center/46% no-repeat;opacity:.2;mix-blend-mode:soft-light}
+.figure .ph-label{display:none}
+
+/* =========================================================
+   Single-column treatment for sections with no image
+   ========================================================= */
+.hero-inner.solo{grid-template-columns:minmax(0,860px);justify-content:center}
+.split.solo{grid-template-columns:minmax(0,820px);justify-content:center}
